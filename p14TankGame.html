@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Tank Game</title>
+
+<style type="text/css">
+.game{position:absolute; top:780px; left: 930px; font-size: 60;}
+.canvas{position:absolute; top:50px; left:25%}
+#LinkBack{
+font-weight:bold;
+color:blue;
+position:absolute;
+left:10px;
+top:10px;
+font-family:"Times New Roman";
+}
+</style>
+<a id= "LinkBack"  href="Gita2.html">
+Back</a>
+<script language="javascript">
+var _0x3540=["\x6B\x65\x79\x64\x6F\x77\x6E","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x53\x68\x6F\x6F\x74\x28\x29","\x6D\x79\x43\x61\x6E\x76\x61\x73","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x32\x64","\x67\x65\x74\x43\x6F\x6E\x74\x65\x78\x74","\x77\x69\x64\x74\x68","\x63\x61\x6E\x76\x61\x73","\x68\x65\x69\x67\x68\x74","\x66\x69\x6C\x6C\x53\x74\x79\x6C\x65","\x23\x30\x30\x30\x30\x30\x30","\x69\x6E\x6E\x65\x72\x57\x69\x64\x74\x68","\x69\x6E\x6E\x65\x72\x48\x65\x69\x67\x68\x74","\x66\x69\x6C\x6C\x52\x65\x63\x74","\x23\x30\x30\x46\x46\x46\x37","\x62\x65\x67\x69\x6E\x50\x61\x74\x68","\x50\x49","\x61\x72\x63","\x63\x6C\x6F\x73\x65\x50\x61\x74\x68","\x66\x69\x6C\x6C","\x6D\x6F\x76\x65\x54\x6F","\x6C\x69\x6E\x65\x54\x6F","\x23\x46\x46\x30\x30\x30\x30","\x6C\x69\x6E\x65\x57\x69\x64\x74\x68","\x73\x74\x72\x6F\x6B\x65\x53\x74\x79\x6C\x65","\x23\x66\x32\x37\x62\x34\x31","\x73\x74\x72\x6F\x6B\x65","\x23\x66\x32\x38\x38\x33\x39","\x77\x68\x69\x63\x68","\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x48\x65\x61\x6C\x74\x68","\x48\x65\x61\x6C\x74\x68\x3A\x20","\x0A\x20\x53\x63\x6F\x72\x65\x3A\x20","\x59\x6F\x75\x20\x4C\x6F\x73\x74\x21\x20\x52\x65\x73\x65\x74\x69\x6E\x67","\x59\x6F\x75\x20\x57\x6F\x6E\x21\x20\x52\x65\x73\x65\x74\x69\x6E\x67","\x0A\x20\x53\x63\x6F\x72\x65\x3A","\x45\x6E\x65\x6D\x79\x28\x29"];var xCoord1=60;var yCoord1=60;var direction=1* 1;var veloicty=-1* 1;var Shotx=0* 1;var Shoty=0* 1;var TriX=940* 1;var TriY=640* 1;var TriSpeed=4* 1;var OnOff=0* 1;var Hleft=5* 1;var Score=0* 1;function init(){window[_0x3540[1]](_0x3540[0],doKeyDown,true);drawCircle();timer= setInterval(_0x3540[2],50)}function drawCircle(){var _0x44fdxf=document[_0x3540[4]](_0x3540[3]);var _0x44fdx10=_0x44fdxf[_0x3540[6]](_0x3540[5]);_0x44fdx10[_0x3540[8]][_0x3540[7]]= 1000;_0x44fdx10[_0x3540[8]][_0x3540[9]]= 700;_0x44fdx10[_0x3540[10]]= _0x3540[11];_0x44fdx10[_0x3540[14]](0,0,window[_0x3540[12]],window[_0x3540[13]]);_0x44fdx10[_0x3540[10]]= _0x3540[15];_0x44fdx10[_0x3540[16]]();_0x44fdx10[_0x3540[18]](xCoord1,yCoord1,15,0,Math[_0x3540[17]]* 2,true);_0x44fdx10[_0x3540[19]]();_0x44fdx10[_0x3540[20]]();switch(direction){case 0:_0x44fdx10[_0x3540[16]]();_0x44fdx10[_0x3540[10]]= _0x3540[15];_0x44fdx10[_0x3540[21]](xCoord1- 20,yCoord1- 13);_0x44fdx10[_0x3540[22]](xCoord1- 20,yCoord1+ 13);_0x44fdx10[_0x3540[22]](xCoord1- 60,yCoord1);_0x44fdx10[_0x3540[20]]();break;case 1:_0x44fdx10[_0x3540[16]]();_0x44fdx10[_0x3540[10]]= _0x3540[15];_0x44fdx10[_0x3540[21]](xCoord1+ 20,yCoord1- 13);_0x44fdx10[_0x3540[22]](xCoord1+ 20,yCoord1+ 13);_0x44fdx10[_0x3540[22]](xCoord1+ 60,yCoord1);_0x44fdx10[_0x3540[20]]();break;case 2:_0x44fdx10[_0x3540[16]]();_0x44fdx10[_0x3540[10]]= _0x3540[15];_0x44fdx10[_0x3540[21]](xCoord1- 13,yCoord1- 20);_0x44fdx10[_0x3540[22]](xCoord1+ 13,yCoord1- 20);_0x44fdx10[_0x3540[22]](xCoord1,yCoord1- 60);_0x44fdx10[_0x3540[20]]();break;case 3:_0x44fdx10[_0x3540[16]]();_0x44fdx10[_0x3540[10]]= _0x3540[15];_0x44fdx10[_0x3540[21]](xCoord1+ 13,yCoord1+ 20);_0x44fdx10[_0x3540[22]](xCoord1- 13,yCoord1+ 20);_0x44fdx10[_0x3540[22]](xCoord1,yCoord1+ 60);_0x44fdx10[_0x3540[20]]();break};_0x44fdx10[_0x3540[10]]= _0x3540[23];_0x44fdx10[_0x3540[16]]();_0x44fdx10[_0x3540[18]](Shotx,Shoty,5,0,Math[_0x3540[17]]* 2,true);_0x44fdx10[_0x3540[19]]();_0x44fdx10[_0x3540[20]]();_0x44fdx10[_0x3540[16]]();_0x44fdx10[_0x3540[21]](TriX,TriY);_0x44fdx10[_0x3540[22]](TriX- 10,TriY+ 15);_0x44fdx10[_0x3540[22]](TriX+ 10,TriY+ 15);_0x44fdx10[_0x3540[19]]();_0x44fdx10[_0x3540[24]]= 10;_0x44fdx10[_0x3540[25]]= _0x3540[26];_0x44fdx10[_0x3540[27]]();_0x44fdx10[_0x3540[10]]= _0x3540[28];_0x44fdx10[_0x3540[20]]()}function Shoot(){if(Shotx<= 0|| Shotx>= 1000|| Shoty<= 0|| Shoty>= 700){clearInterval(timer)};if(veloicty== 0){Shotx-= 10}else {if(veloicty== 1){Shotx+= 10}else {if(veloicty== 2){Shoty-= 10}else {if(veloicty== 3){Shoty+= 10}}}};drawCircle()}function doKeyDown(_0x44fdx13){switch(_0x44fdx13[_0x3540[29]]){case 65:if(xCoord1- 15>= 0){xCoord1-= 15;direction= 0};break;case 68:if(xCoord1+ 15<= 1000){xCoord1+= 15;direction= 1};break;case 87:if(yCoord1- 15>= 0){yCoord1-= 15;direction= 2};break;case 83:if(yCoord1+ 15<= 700){yCoord1+= 15;direction= 3};break;case 32:clearInterval(timer);Shotx= xCoord1;Shoty= yCoord1;veloicty= direction;timer= setInterval(_0x3540[2],50);break};drawCircle()}function Enemy(){if(Shotx<= TriX+ 20&& Shotx>= TriX- 20&& Shoty<= TriY+ 20&& Shoty>= TriY- 20){TriX= Math[_0x3540[31]](Math[_0x3540[30]]()* 900)* 1+ 40;TriY= Math[_0x3540[31]](Math[_0x3540[30]]()* 600)* 1+ 40;Score+= 1;document[_0x3540[4]](_0x3540[33])[_0x3540[32]]= _0x3540[34]+ Hleft+ _0x3540[35]+ Score;Shotx=  -5;Shoty=  -5};if(TriX<= xCoord1+ 20&& TriX>= xCoord1- 20&& TriY<= yCoord1+ 20&& TriY>= yCoord1- 20){TriX= Math[_0x3540[31]](Math[_0x3540[30]]()* 900)* 1+ 40;TriY= Math[_0x3540[31]](Math[_0x3540[30]]()* 600)* 1+ 40;Hleft-= 1;document[_0x3540[4]](_0x3540[33])[_0x3540[32]]= _0x3540[34]+ Hleft+ _0x3540[35]+ Score};if(Hleft<= 0|| Score>= 10){xCoord1= 60;yCoord1= 60;direction= 1* 1;veloicty= -1* 1;Shotx= 0* 1;Shoty= 0* 1;TriX= 940* 1;TriY= 640* 1;TriSpeed= 4* 1;drawCircle();if(Hleft<= 0){alert(_0x3540[36])};if(Score> 9){alert(_0x3540[37])};Hleft= 5* 1;Score= 0* 1;OnOff= 0* 1;document[_0x3540[4]](_0x3540[33])[_0x3540[32]]= _0x3540[34]+ Hleft+ _0x3540[38]+ Score};if(xCoord1<= TriX){TriX-= TriSpeed}else {if(xCoord1> TriX){TriX+= TriSpeed}};if(yCoord1<= TriY){TriY-= TriSpeed}else {if(yCoord1> TriY){TriY+= TriSpeed}};if(TriSpeed<= 8){TriSpeed+= 0.5};drawCircle()}function StartTimer(){if(OnOff== 0){Timer2= setInterval(_0x3540[39],300);onOff= 1* 1}else {if(OnOff== 1){clearInterval(Timer2);onOff= 0* 1}}}
+</script>
+</head>
+<body onload="init()">
+<center>
+
+<h1 id = "Health">
+Health: 5 
+   
+Score: 0
+</h1>
+
+
+<div class="canvas"><canvas id="myCanvas" width="500"
+		style="border:1px solid rgb(195, 195, 195);">
+		Your browser does not support the canvas element
+		</center></div>
+		
+<div class="game"><input type="button" name="Auto" value="Start"
+		onclick="StartTimer()"/></div>
+</canvas>
+</body>
+</html>

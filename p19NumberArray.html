@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Number Array</title>
+<style type="text/css">
+.Title{position:absolute;left:45%; top:5%;}
+.Output{position:absolute;left:30%; top:15%;word-wrap: break-word; width: 800px;}
+.Evens{position:absolute;left:30%; top:40%;word-wrap: break-word; width: 800px;}
+.Button{position:absolute;left:49%; top:86%;}
+
+h1{color:black;}	
+.myText{color:blue; font-family:arial; font-size:22px}
+#LinkBack{
+font-weight:bold;
+color:blue;
+position:absolute;
+left:10px;
+top:10px;
+font-family:"Times New Roman";
+}
+</style>
+<a id= "LinkBack"  href="Gita2.html">
+Back</a>
+<script>
+var _0x599f=['127135nrXUyw','Evens:\x20','log','3DEbcYT','StartAlgorithm()','Output','1046343nAThDL','258299OCjNOH','innerHTML','449228cwLaRJ','Average:\x20','1izWKZj','sort','\x20Average:\x20','join','698994hEuYzh','3ARvVsS','1YMPCgw','Array:\x20','126695KhkYtI','Evens','\x20Lowest:\x20','\x20Highest:\x20','random','963343snfJIC','2qMsqoc','1dcNclc'];(function(_0x3f3720,_0x3045b2){var _0x6f1412=_0x4059;while(!![]){try{var _0xb60c5b=-parseInt(_0x6f1412(0x11b))+parseInt(_0x6f1412(0x127))*-parseInt(_0x6f1412(0x11c))+parseInt(_0x6f1412(0x130))*parseInt(_0x6f1412(0x125))+-parseInt(_0x6f1412(0x132))*-parseInt(_0x6f1412(0x12d))+parseInt(_0x6f1412(0x11f))*-parseInt(_0x6f1412(0x126))+-parseInt(_0x6f1412(0x11d))*parseInt(_0x6f1412(0x124))+parseInt(_0x6f1412(0x12a))*parseInt(_0x6f1412(0x12e));if(_0xb60c5b===_0x3045b2)break;else _0x3f3720['push'](_0x3f3720['shift']());}catch(_0x2390d2){_0x3f3720['push'](_0x3f3720['shift']());}}}(_0x599f,0x8618b));var size=0x0*0x1,newNum=0x0*0x1,evenNum=0x0*0x1,total=0x0*0x1,arrayOutput='',evenOutput='',OnOff=0x0*0x1,numArray=[],evenArray=[],evenSize=0x0*0x1,evenTotal=0x0*0x1,highest=0x0*0x1,lowest=0x64*0x1;function _0x4059(_0x100a91,_0x3b550c){_0x100a91=_0x100a91-0x119;var _0x599f75=_0x599f[_0x100a91];return _0x599f75;}function StartAlgorithm(){var _0x2a90f6=_0x4059;numArray[size]=Math['floor'](Math[_0x2a90f6(0x123)]()*0x64)+0x1*0x1,total+=numArray[size];highest<numArray[size]&&(highest=numArray[size]);lowest>numArray[size]&&(lowest=numArray[size]);numArray[size]%0x2==0x0&&(evenArray[evenSize]=numArray[size],evenTotal+=evenArray[evenSize],evenSize++);numArray[_0x2a90f6(0x133)](function(_0x232a1d,_0x3bf0bb){return _0x232a1d-_0x3bf0bb;}),arrayOutput=numArray[_0x2a90f6(0x11a)](',\x20'),size++;if(size>=0x64){for(var _0x1fb6ae=0x0;_0x1fb6ae<0x64;_0x1fb6ae++){evenArray[_0x2a90f6(0x133)](function(_0x4949da,_0x1e11b1){return _0x4949da-_0x1e11b1;}),evenOutput=evenArray[_0x2a90f6(0x11a)](',\x20'),console[_0x2a90f6(0x129)](evenArray);}total/=0x64,evenTotal=Math['round'](evenSize*0x64)/0x64,document['getElementById'](_0x2a90f6(0x12c))['innerHTML']=_0x2a90f6(0x11e)+arrayOutput+_0x2a90f6(0x119)+total+_0x2a90f6(0x122)+highest+_0x2a90f6(0x121)+lowest,document['getElementById'](_0x2a90f6(0x120))[_0x2a90f6(0x12f)]=_0x2a90f6(0x128)+evenOutput+'\x20\x0a'+_0x2a90f6(0x131)+evenTotal,clearInterval(MoveTimer),OnOff=0x0*0x1;}}function StartTimer(){var _0x2bd723=_0x4059;if(OnOff==0x0)MoveTimer=setInterval(_0x2bd723(0x12b),0x14),OnOff=0x1*0x1;else OnOff==0x1&&(clearInterval(MoveTimer),OnOff=0x0*0x1);}	
+</script>
+</head>
+<body>
+<h1 class = "Title">Number Array</h1>
+<h2 id = "Output" class = "Output">Array: </h2>
+<h2 id = "Evens" class = "Evens">Evens: </h2>
+<input class = "Button" type="button"  value="Start" onclick="StartTimer()"/>
+</body>
+</html>

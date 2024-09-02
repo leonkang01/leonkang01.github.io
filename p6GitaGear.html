@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>Leon Kang Gita Gear</title>
+<style type="text/css">
+.title{position:absolute; top:50px; left: 35%; font-size: 60;}
+.input{position:absolute; top: 20%;left: 45%;}
+.output1{position: absolute; top: 40%; left: 45%;}
+.output2{position: absolute; top: 40%; left: 53%;}
+#LinkBack{
+font-weight:bold;
+color:blue;
+position:absolute;
+left:10px;
+top:10px;
+font-family:"Times New Roman";
+}
+</style>
+<script language="javascript">
+
+                var total = 0;
+                var totalplaced = 0;
+                var Average = 0;
+                var sum = 0;
+
+        function calculate(NumOfShirts, NumOfPads,NumOfStickers,NumOfBanners, strName,) {
+
+                totalplaced += 1;
+                sum  = (NumOfShirts * 15) + (NumOfPads * 5) + (NumOfStickers * 1.5) + (NumOfBanners * 12);
+                total += sum;
+                Average = total/totalplaced;
+
+                document.OutputForm.txtoutputField.value = "Thank you " + strName + "! \n" + "Your Total is $:" + sum;
+                document.ManagerForm.txtmanagerField.value = "Total Money: \n$" + Math.round(total*10)/10 + "\nAverage per order: \n$" + Math.round(Average*10)/10 +
+                 "\nTotal Orders Placed: \n" + totalplaced;
+        }
+    
+    </script>
+
+<h1><div class="title">Cool Swanky Gita Merch</div> </h1>
+<a id= "LinkBack"  href="Gita2.html">
+Back</a>
+</head>
+<body>
+    
+    <form name="nameForm"><div class="input">
+        Please Enter Amount
+    </br>
+    </br>
+        Your Name:<input type="text" name="txtName" value=""/>
+        </br>
+        Polo Shirt $15:<input type="text" name="txtShirt" value=""/>
+        </br>
+        Mouse Pad $5:<input type="text" name="txtMouse" value=""/>
+        </br>
+        Sticker $1.50:<input type="text" name="txtSticker" value=""/>
+        </br>
+        Banners $12:<input type="text" name="txtBanner" value=""/>
+        <br>
+        <input type="button" name="btnPress" value="calculate" 
+        onclick="calculate(nameForm.txtShirt.value,
+        nameForm.txtMouse.value,
+        nameForm.txtSticker.value,
+        nameForm.txtBanner.value,
+        nameForm.txtName.value)"/>
+    </form>
+</div>
+</br>
+
+<div class="output1">
+        <form name="OutputForm">
+        <textArea name="txtoutputField" id="outputField" rows="20" cols="17"/>
+            </textArea>
+            </form>
+        </div>
+
+<div class="output2">
+        <form name="ManagerForm">
+        <textArea name="txtmanagerField" id="managerfield" rows="20" cols="18"/>
+            </textArea>
+            </form>
+        </div>
+</body>
+</html>

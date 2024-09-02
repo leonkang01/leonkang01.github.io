@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Leon Kang Craps Game</title>
+<style>
+html{background-color: #025d17;}
+.title{position:absolute; top:50px; left:44%; font-size: 60; color: gold}
+.roll{position:absolute;top:700px; left:940px}
+.dice1{position:absolute;top:160px; left:330px}
+.dice2{position:absolute;top:160px; left:870px}
+textArea{position:absolute;top:160px; left:1420px}
+#LinkBack{
+font-weight:bold;
+color:blue;
+position:absolute;
+left:10px;
+top:10px;
+font-family:"Times New Roman";
+}
+</style>
+
+<script style="javascript">
+var _0x9c8f=["\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x76\x61\x6C\x75\x65","\x74\x78\x74\x6F\x75\x74\x70\x75\x74\x46\x69\x65\x6C\x64","\x4F\x75\x74\x70\x75\x74\x46\x6F\x72\x6D","","\x73\x72\x63","\x44\x69\x63\x65\x52\x6F\x6C\x6C\x31","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x70\x39\x44\x69\x63\x65","\x2E\x6A\x70\x67","\x44\x69\x63\x65\x52\x6F\x6C\x6C\x32","\x52\x6F\x6C\x6C\x65\x64\x20\x61\x3A\x20","\x20\x59\x6F\x75\x20\x57\x6F\x6E\x21\x20\x52\x65\x73\x74\x61\x72\x74\x69\x6E\x67","\x20\x59\x6F\x75\x20\x4C\x6F\x73\x74\x21\x20\x52\x65\x73\x74\x61\x72\x74\x69\x6E\x67","\x59\x6F\x75\x72\x20\x50\x6F\x69\x6E\x74\x20\x69\x73\x3A\x20","\x0A"];var TotalRolls=0* 1;var Point=0* 1;function RollDice(){var _0x48efx4=Math[_0x9c8f[1]]((Math[_0x9c8f[0]]()* 6)+ 1);var _0x48efx5=Math[_0x9c8f[1]]((Math[_0x9c8f[0]]()* 6)+ 1);var _0x48efx6=0* 1;if(TotalRolls== 0){document[_0x9c8f[4]][_0x9c8f[3]][_0x9c8f[2]]= _0x9c8f[5]};TotalRolls+= 1;_0x48efx6+= _0x48efx4;_0x48efx6+= _0x48efx5;document[_0x9c8f[8]](_0x9c8f[7])[_0x9c8f[6]]= _0x9c8f[9]+ _0x48efx4+ _0x9c8f[10];document[_0x9c8f[8]](_0x9c8f[11])[_0x9c8f[6]]= _0x9c8f[9]+ _0x48efx5+ _0x9c8f[10];if((_0x48efx6== 7|| _0x48efx6== 11)&& TotalRolls== 1){document[_0x9c8f[4]][_0x9c8f[3]][_0x9c8f[2]]+= _0x9c8f[12]+ _0x48efx6+ _0x9c8f[13];TotalRolls= 0}else {if(TotalRolls== 1&& (_0x48efx6== 2|| _0x48efx6== 3|| _0x48efx6== 12)){document[_0x9c8f[4]][_0x9c8f[3]][_0x9c8f[2]]+= _0x9c8f[12]+ _0x48efx6+ _0x9c8f[14];TotalRolls= 0}else {if(TotalRolls== 1){Point= _0x48efx6;document[_0x9c8f[4]][_0x9c8f[3]][_0x9c8f[2]]+= _0x9c8f[15]+ _0x48efx6+ _0x9c8f[16]}}};if(TotalRolls> 1&& Point== _0x48efx6){document[_0x9c8f[4]][_0x9c8f[3]][_0x9c8f[2]]+= _0x9c8f[12]+ _0x48efx6+ _0x9c8f[13];TotalRolls= 0}else {if(TotalRolls> 1&& _0x48efx6== 7){document[_0x9c8f[4]][_0x9c8f[3]][_0x9c8f[2]]+= _0x9c8f[12]+ _0x48efx6+ _0x9c8f[14];TotalRolls= 0}else {if(TotalRolls> 1){document[_0x9c8f[4]][_0x9c8f[3]][_0x9c8f[2]]+= _0x9c8f[12]+ _0x48efx6+ _0x9c8f[16]}}}}
+</script>
+
+<h1><div class="title">Craps Game</div></h1>
+<a id= "LinkBack"  href="Gita2.html">
+Back</a>
+</head>
+<body>
+<div class="dice1"><img id="DiceRoll1" src="images/p9Dice1.jpg" width = "500px" height="500px"></div>
+<div class="dice2"><img id="DiceRoll2" src="images/p9Dice1.jpg" width = "500px" height="500px"></div>
+
+    <div class="roll">
+        <input type="button" name="btnPress" value="roll"
+        onclick="RollDice()"/>
+        </div>
+
+        <form name="OutputForm"><textArea name="txtoutputField" id="outputField" rows="	33" cols="40" ></textArea></form>
+
+
+</body>
+
+</html>

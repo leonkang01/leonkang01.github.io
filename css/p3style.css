@@ -1,0 +1,22 @@
+#LinkBack{
+font-weight:bold;
+color:blue;
+position:absolute;
+left:10px;
+top:10px;
+font-family:"Times New Roman";
+}
+
+
+#card{
+	text-align:center;
+	background-color:CornflowerBlue;
+	padding:20px 0 20px 0px;
+	width:400px;
+	border:3px solid black;
+}
+
+
+#linkOne{
+	font-size:25px
+}

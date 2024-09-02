@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Circle Bounce</title>
+<style>
+#LinkBack{
+font-weight:bold;
+color:blue;
+position:absolute;
+left:10px;
+top:10px;
+font-family:"Times New Roman";
+}
+</style>
+<a id= "LinkBack"  href="Gita2.html">
+Back</a>
+<script language="javascript">
+var _0x4d65=["\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x6D\x79\x43\x61\x6E\x76\x61\x73","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x32\x64","\x67\x65\x74\x43\x6F\x6E\x74\x65\x78\x74","\x77\x69\x64\x74\x68","\x63\x61\x6E\x76\x61\x73","\x68\x65\x69\x67\x68\x74","\x66\x69\x6C\x6C\x53\x74\x79\x6C\x65","\x23\x30\x30\x30\x30\x30\x30","\x69\x6E\x6E\x65\x72\x57\x69\x64\x74\x68","\x69\x6E\x6E\x65\x72\x48\x65\x69\x67\x68\x74","\x66\x69\x6C\x6C\x52\x65\x63\x74","\x23\x66\x66\x30\x30\x30\x30","\x62\x65\x67\x69\x6E\x50\x61\x74\x68","\x50\x49","\x61\x72\x63","\x63\x6C\x6F\x73\x65\x50\x61\x74\x68","\x66\x69\x6C\x6C","\x23\x30\x64\x30\x30\x66\x66","\x6C\x6F\x67","\x4D\x6F\x76\x65\x31\x28\x29\x2C\x20\x4D\x6F\x76\x65\x32\x28\x29"];var moveX1=10* 1;var moveY1=5* 1;var moveX2=10* 1;var moveY2=5* 1;var xCoord1=Math[_0x4d65[1]](Math[_0x4d65[0]]()* 620)* 1;var yCoord1=(Math[_0x4d65[1]](Math[_0x4d65[0]]()* 320)* 1)+ 30;var xCoord2=Math[_0x4d65[1]](Math[_0x4d65[0]]()* 620)* 1;var yCoord2=Math[_0x4d65[1]](Math[_0x4d65[0]]()* 320)* 1;var onOff=0* 1;var trapped=0* 1;function drawCircle(){var _0x9093xc=document[_0x4d65[3]](_0x4d65[2]);var _0x9093xd=_0x9093xc[_0x4d65[5]](_0x4d65[4]);_0x9093xd[_0x4d65[7]][_0x4d65[6]]= 700;_0x9093xd[_0x4d65[7]][_0x4d65[8]]= 400;_0x9093xd[_0x4d65[9]]= _0x4d65[10];_0x9093xd[_0x4d65[13]](0,0,window[_0x4d65[11]],window[_0x4d65[12]]);_0x9093xd[_0x4d65[9]]= _0x4d65[14];_0x9093xd[_0x4d65[15]]();_0x9093xd[_0x4d65[17]](xCoord1,yCoord1,40,0,Math[_0x4d65[16]]* 2,true);_0x9093xd[_0x4d65[18]]();_0x9093xd[_0x4d65[19]]();_0x9093xd[_0x4d65[9]]= _0x4d65[20];_0x9093xd[_0x4d65[15]]();_0x9093xd[_0x4d65[17]](xCoord2,yCoord2,15,0,Math[_0x4d65[16]]* 2,true);_0x9093xd[_0x4d65[18]]();_0x9093xd[_0x4d65[19]]()}function Move1(){yCoord1+= moveY1;xCoord1+= moveX1;if((xCoord2>= xCoord1- 10&& xCoord2<= xCoord1+ 50)&& (yCoord2>= yCoord1- 10&& yCoord2<= yCoord1+ 50)&& trapped!= 1){trapped= 1;console[_0x4d65[21]](trapped);yCoord1= yCoord2;xCoord1= xCoord2};if(xCoord1> 680){moveX1*=  -1}else {if(xCoord1< 20){moveX1*=  -1}};if(yCoord1> 380){moveY1*=  -1}else {if(yCoord1< 20){moveY1*=  -1}};drawCircle()}function Move2(){if(trapped>= 1){yCoord2+= moveY1;xCoord2+= moveX1}else {yCoord2+= moveY2;xCoord2+= moveX2;if(xCoord2> 680){moveX2*=  -1}else {if(xCoord2< 0){moveX2*=  -1}};if(yCoord2> 380){moveY2*=  -1}else {if(yCoord2< 0){moveY2*=  -1}};drawCircle()}}function StartTimer(){if(onOff== 0){timer= setInterval(_0x4d65[22],30);onOff= 1* 1}else {if(onOff== 1){clearInterval(timer);onOff= 0* 1}}}
+
+</script>
+</head>
+<body onload="drawCircle()">
+<center>
+</br>
+</br>
+<h1>Circle Bounce</h1>
+</br>
+</br>
+<canvas id="myCanvas" width="500"
+		style="border:1px solid rgb(195, 195, 195);">
+		Your browser does not support the canvas element
+</canvas>
+</br>
+</br>
+<input type="button" name="Play" value="Move"
+				onclick="Move1(), Move2()"/>
+<input type="button" name="Auto" value="Animate"
+				onclick="StartTimer()"/>				
+</center>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Pong Game</title>
+
+<style type="text/css">
+.game{position:absolute; top:580px; left: 930px; font-size: 60;}
+.canvas{position:absolute; top:50px; left:29%}
+#LinkBack{
+font-weight:bold;
+color:blue;
+position:absolute;
+left:10px;
+top:10px;
+font-family:"Times New Roman";
+}
+</style>
+<a id= "LinkBack"  href="Gita2.html">
+Back</a>
+<script language="javascript">
+var _0xed12=["\x72\x61\x6E\x64\x6F\x6D","\x66\x6C\x6F\x6F\x72","\x6B\x65\x79\x64\x6F\x77\x6E","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x6D\x79\x43\x61\x6E\x76\x61\x73","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x32\x64","\x67\x65\x74\x43\x6F\x6E\x74\x65\x78\x74","\x77\x69\x64\x74\x68","\x63\x61\x6E\x76\x61\x73","\x68\x65\x69\x67\x68\x74","\x66\x69\x6C\x6C\x53\x74\x79\x6C\x65","\x23\x30\x30\x30\x30\x30\x30","\x69\x6E\x6E\x65\x72\x57\x69\x64\x74\x68","\x69\x6E\x6E\x65\x72\x48\x65\x69\x67\x68\x74","\x66\x69\x6C\x6C\x52\x65\x63\x74","\x23\x36\x39\x36\x39\x36\x39","\x62\x65\x67\x69\x6E\x50\x61\x74\x68","\x72\x65\x63\x74","\x73\x74\x72\x6F\x6B\x65","\x66\x69\x6C\x6C","\x23\x30\x64\x30\x30\x66\x66","\x50\x49","\x61\x72\x63","\x63\x6C\x6F\x73\x65\x50\x61\x74\x68","\x77\x68\x69\x63\x68","\x63\x6C\x65\x61\x72\x49\x6E\x74\x65\x72\x76\x61\x6C","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x53\x63\x6F\x72\x65\x42\x6F\x61\x72\x64","\x53\x63\x6F\x72\x65\x20","\x20\x2D\x20","\x59\x6F\x75\x20\x57\x6F\x6E\x21\x20\x52\x65\x73\x65\x74\x69\x6E\x67","\x59\x6F\x75\x20\x4C\x6F\x73\x74\x21\x20\x52\x65\x73\x65\x74\x69\x6E\x67","\x4D\x6F\x76\x65\x28\x29"];var xCoord1=350* 1;var xCoord2=350* 1;var Ballx=Math[_0xed12[1]](Math[_0xed12[0]]()* 600)* 1+ 100;var Bally=250;var BallMovex=7* 1;var BallMovey=-7* 1;var Movex=15* 1;var Movey=15* 1;var onOff=0* 1;var eneMove=0* 1;var Score1=0* 1;var Score2=0* 1;function init(){window[_0xed12[3]](_0xed12[2],doKeyDown,true);drawCircle()}function drawCircle(){var _0x7a08xf=document[_0xed12[5]](_0xed12[4]);var _0x7a08x10=_0x7a08xf[_0xed12[7]](_0xed12[6]);_0x7a08x10[_0xed12[9]][_0xed12[8]]= 800;_0x7a08x10[_0xed12[9]][_0xed12[10]]= 500;_0x7a08x10[_0xed12[11]]= _0xed12[12];_0x7a08x10[_0xed12[15]](0,0,window[_0xed12[13]],window[_0xed12[14]]);_0x7a08x10[_0xed12[11]]= _0xed12[16];_0x7a08x10[_0xed12[17]]();_0x7a08x10[_0xed12[18]](xCoord1,450,120,25);_0x7a08x10[_0xed12[19]]();_0x7a08x10[_0xed12[20]]();_0x7a08x10[_0xed12[11]]= _0xed12[16];_0x7a08x10[_0xed12[17]]();_0x7a08x10[_0xed12[18]](xCoord2,30,120,25);_0x7a08x10[_0xed12[19]]();_0x7a08x10[_0xed12[20]]();_0x7a08x10[_0xed12[11]]= _0xed12[21];_0x7a08x10[_0xed12[17]]();_0x7a08x10[_0xed12[23]](Ballx,Bally,15,0,Math[_0xed12[22]]* 2,true);_0x7a08x10[_0xed12[24]]();_0x7a08x10[_0xed12[20]]()}function doKeyDown(_0x7a08x12){switch(_0x7a08x12[_0xed12[25]]){case 65:if(xCoord1>= 0){xCoord1-= 15};break;case 68:if(xCoord1<= 680){xCoord1+= 15};break};drawCircle()}function Move(){eneMove+= 1;Ballx+= BallMovex;Bally+= BallMovey;if(Bally<= 0|| Bally+ 15> 500){xCoord1= 350* 1;xCoord2= 350* 1;Ballx= Math[_0xed12[1]](Math[_0xed12[0]]()* 600)* 1+ 100;BallMovex= 7* 1;BallMovey= -7* 1;Movex= 15* 1;Movey= 15* 1;onOff= 0* 1;eneMove= 0* 1;window[_0xed12[26]](timer);if(Bally<= 0){Score1+= 1;document[_0xed12[5]](_0xed12[28])[_0xed12[27]]= _0xed12[29]+ Score1+ _0xed12[30]+ Score2;alert(_0xed12[31])}else {if(Bally+ 15> 500){Score2+= 1;document[_0xed12[5]](_0xed12[28])[_0xed12[27]]= _0xed12[29]+ Score1+ _0xed12[30]+ Score2;alert(_0xed12[32])}};Bally= 250};if(Ballx<= 15|| Ballx>= 785){BallMovex*=  -1;if(BallMovex< 0){BallMovex-= 2}else {if(BallMovex> 0){BallMovex+= 2}}};if(eneMove>= 3&& Ballx< xCoord2+ 60){xCoord2-= Math[_0xed12[1]](Math[_0xed12[0]]()* 30)* 1+ 15;eneMove= 0}else {if(eneMove>= 3&& Ballx> xCoord2+ 60){xCoord2+= Math[_0xed12[1]](Math[_0xed12[0]]()* 30)* 1+ 15;eneMove= 0}};if((Ballx>= xCoord1&& Ballx+ 15<= xCoord1+ 120)&& (Bally+ 15>= 450&& Bally+ 15<= 475)){Bally-= 10;BallMovey*=  -1;if(BallMovey< 0){BallMovey-= 0.5}else {if(BallMovey> 0){BallMovey+= 0.5}}}else {if((Ballx>= xCoord2&& Ballx+ 15<= xCoord2+ 120)&& (Bally+ 15>= 25&& Bally+ 15<= 85)){Bally+= 10;BallMovey*=  -1;if(BallMovey< 0){BallMovey-= 0.5}else {if(BallMovey> 0){BallMovey+= 0.5}}}};drawCircle()}function StartTimer(){if(onOff== 0){timer= setInterval(_0xed12[33],30);onOff= 1* 1}else {if(onOff== 1){clearInterval(timer);onOff= 0* 1}}}
+
+</script>
+</head>
+<body onload="init()">
+<center>
+
+<h1 id = "ScoreBoard">Score 0 - 0</h1>
+
+<div class="canvas"><canvas id="myCanvas" width="500"
+		style="border:1px solid rgb(195, 195, 195);">
+		Your browser does not support the canvas element
+		</center></div>
+		
+<div class="game"><input type="button" name="Auto" value="Start"
+		onclick="StartTimer()"/></div>
+</canvas>
+</body>
+</html>
