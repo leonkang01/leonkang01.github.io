@@ -176,9 +176,6 @@ p.lead {
    margin-bottom: 18px;
 }
 
-.tab {
-   tab-size: 8;
-}
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */
