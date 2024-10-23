@@ -87,8 +87,6 @@ pre {
    word-wrap: break-word;
 }
 
-blockquote, q { quotes: &#8220 &#8220; }
-
 blockquote:before, blockquote:after,
 q:before, q:after {
    content: '';
@@ -176,6 +174,10 @@ p img { margin: 0; }
 p.lead {
    font: 19px/36px 'opensans-light', sans-serif;
    margin-bottom: 18px;
+}
+
+.tab {
+   tab-size: 8;
 }
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
