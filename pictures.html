@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Pictures</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+	</head>
+	<body class="is-preload projects-page">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<ul class="icons">
+						<li><a href="https://github.com/leonkang01" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://www.linkedin.com/in/leonkang01/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="mailto:leonkang01@gmail.com" class="icon solid fa-envelope"><span class="label">Mail</span></a></li>
+					</ul>
+					<nav id="nav">
+						<ul>	
+							<li><a href="links/LeonKangResume.pdf" class="icon solid ">Resume</a></li>
+							<li><a href="index.html" class="icon solid">About Me</a></li>
+							<li><a href="projects.html" class="icon solid">Projects</a></li>	
+						</ul>
+					</nav>
+				</header>
+
+
+			<!-- Main -->
+			<section id="main" class="container">
+				<header>
+					<h2>Gallery</h2>
+					<p>A collection of different highlights and memories in my life.</p>
+				</header>
+
+				<div class="gallery-grid">
+					<div class="gallery-item" onclick="openModal(this)">
+						<img src="images/photos/coffee.jpg" alt="Google Careers Project">
+						<div class="caption-data">
+							<h3>Babloa Park</h3>
+							<p>I went here with my family and it was really interesting, we went to the International Cottages and ate different foods along with watching a Hula Dance demonstration.</p>
+						</div>
+					</div>
+
+					<div class="gallery-item" onclick="openModal(this)">
+						<img src="images/photos/console.jpg" alt="BJJ Club Leadership">
+						<div class="caption-data">
+							<h3>Mountain Spirit Center</h3>
+							<p>I went to this Buddhist Temple and it was way in the middle of nowhere so the atmosphere was really calm and peaceful, since my family were the only ones there we got to ring this huge bell which echoed through the mountains.</p>
+						</div>
+					</div>
+
+					<div class="gallery-item" onclick="openModal(this)">
+						<img src="images/photos/into-the-light.jpg" alt="BJJ Club Leadership">
+						<div class="caption-data">
+							<h3>The Flower Fields</h3>
+							<p>My family visited the Flower Fields and we got to relax and look at a ton of different plants, the air was really clear and it looked like waves of color that didnt stop until the horizon.</p>
+						</div>
+					</div>
+
+					<div class="gallery-item" onclick="openModal(this)">
+						<img src="images/photos/judah.jpg" alt="BJJ Club Leadership">
+						<div class="caption-data">
+							<h3>Getty Museum</h3>
+							<p>My family visits a lot of museums and we recently went to the Getty. In order to see the displays we had to ride a cable car up a mountain which was almost cooler than the art and furniture, almost.</p>
+						</div>
+					</div>
+
+					<div class="gallery-item" onclick="openModal(this)">
+						<img src="images/photos/mountdiablo.jpg" alt="BJJ Club Leadership">
+						<div class="caption-data">
+							<h3>Mount Diablo</h3>
+							<p>I hiked Mount Diablo in SF with some family members for thanksgiving. Getting to look down and see clouds was an incredibly interesting experience and I had a great time burning off the thanksgiving calories.</p>
+						</div>
+					</div>
+
+					<div class="gallery-item" onclick="openModal(this)">
+						<img src="images/photos/bjj.jpg" alt="BJJ Club Leadership">
+						<div class="caption-data">
+							<h3>BJJ Club</h3>
+							<p>Blue belt 🙏.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div id="imageModal" class="modal" onclick="closeModal()">
+				<span class="close">&times;</span>
+				<div class="modal-content-container">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+				</div>
+			</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				function openModal(element) {
+					var modal = document.getElementById("imageModal");
+					var modalImg = document.getElementById("img01");
+					var captionText = document.getElementById("caption");
+					var header = document.getElementById("header"); // Select your header
+
+					// Get data from the clicked item
+					var clickedImg = element.getElementsByTagName('img')[0];
+					var clickedCaption = element.getElementsByClassName('caption-data')[0];
+
+					modal.style.display = "block";
+					header.style.display = "none"; // Hide the header
+					modalImg.src = clickedImg.src;
+					captionText.innerHTML = clickedCaption.innerHTML;
+				}
+
+				function closeModal() {
+					document.getElementById("imageModal").style.display = "none";
+					document.getElementById("header").style.display = "flex"; // Restore the header
+				}
+			</script>
+
+
+	</body>
+</html>
